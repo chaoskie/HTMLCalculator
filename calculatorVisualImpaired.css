@@ -1,0 +1,109 @@
+body {
+    background-color: #999999;
+}
+
+#background{
+    background: chartreuse;
+    align-content: center;
+    width: 800px;
+    height: 1200px;
+    margin: 100px auto;
+    -webkit-animation: bgChange 8s 2s alternate infinite;
+    transition: all 16s ease;
+}
+
+#result{
+    display: block;
+    font-family: Consolas;
+    font-size: 40px;
+    background: #262225;
+    margin: 20px auto;
+    text-align: right;
+    border: none;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    letter-spacing: 8px;
+}
+
+.btn-style{
+    border-style: none;
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: Consolas;
+    font-size: 32px;
+    border-radius: 8px;
+}
+.rows{
+    margin-bottom: 40px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.num{
+    position: relative;
+    left: 50px;
+    padding: 24px 60px;
+}
+
+.opr{
+    padding: 32px 64px;
+    left: 50px;
+    margin-left: 10px;
+    position: relative;
+    background-color: #cccccc;
+}
+
+.first{
+    position: relative;
+    left: -24px;
+}
+
+.r-op{
+    position: relative;
+    padding: 32px 88px;
+}
+
+.lr{
+    padding: 32px 88px;
+}
+
+.bg-numbers{
+    background-color: #b3d4fc;
+    font-size: 40px;
+}
+
+.br{
+    padding: 32px 88px;
+}
+
+.zero{
+    padding: 32px 96px;
+}
+
+@-webkit-keyframes bgChange {
+
+    0% {
+        background: chartreuse;
+    }
+    25% {
+        background: aqua;
+    }
+    50% {
+        background: crimson;
+    }
+    75%{
+        background: darkorange;
+    }
+    100%{
+        background: deeppink;
+    }
+}

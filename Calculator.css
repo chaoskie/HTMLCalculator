@@ -1,0 +1,109 @@
+body {
+    background-color: #999999;
+}
+
+#background{
+    background: chartreuse;
+    align-content: center;
+    width: 400px;
+    height: 600px;
+    margin: 50px auto;
+    -webkit-animation: bgChange 8s 2s alternate infinite;
+    transition: all 16s ease;
+}
+
+#result{
+    display: block;
+    font-family: Consolas;
+    font-size: 20px;
+    background: #262225;
+    margin: 10px auto;
+    text-align: right;
+    border: none;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    letter-spacing: 4px;
+}
+
+.btn-style{
+    border-style: none;
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: Consolas;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.rows{
+    margin-bottom: 20px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+
+.num{
+    position: relative;
+    left: 25px;
+    padding: 12px 30px;
+}
+
+.opr{
+    padding: 16px 32px;
+    left: 25px;
+    margin-left: 5px;
+    position: relative;
+    background-color: #cccccc;
+}
+
+.first{
+    position: relative;
+    left: -12px;
+}
+
+.r-op{
+    position: relative;
+    padding: 16px 44px;
+}
+
+.lr{
+    padding: 16px 44px;
+}
+
+.bg-numbers{
+    background-color: #b3d4fc;
+    font-size: 20px;
+}
+
+.br{
+    padding: 16px 44px;
+}
+
+.zero{
+    padding: 16px 48px;
+}
+
+@-webkit-keyframes bgChange {
+
+    0% {
+        background: chartreuse;
+    }
+    25% {
+        background: aqua;
+    }
+    50% {
+        background: crimson;
+    }
+    75%{
+        background: darkorange;
+    }
+    100%{
+        background: deeppink;
+    }
+}
