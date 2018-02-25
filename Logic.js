@@ -6,7 +6,10 @@ window.onload = function () {
         limit,
         zero,
         period,
-        operator;
+        operator,
+        memory,
+        minus_memory,
+        plus_memory;
 
     screen = document.getElementById("result");
 
@@ -115,4 +118,40 @@ for(var i =0; i < length; i++){
         },false);
 
     }
+
+
+    document.querySelector("#toggle").addEventListener("click",function(){
+
+        var visual_toggle = document.querySelector("#toggle");
+        var cssStyleOld = document.querySelector(".cssSheet");
+
+        if(visual_toggle.ClassName == "slider round on"){
+
+            visual_toggle.ClassName = "slider round off";
+
+            var newCSSlink = document.createElement("link");
+
+            newCSSlink.setAttribute("class", "cssSheet");
+            newCSSlink.setAttribute("rel", "stylesheet");
+            newCSSlink.setAttribute("type", "text/css");
+            newCSSlink.setAttribute("href", "Calculator.css");
+
+            document.getElementsByTagName("head").item(0).replaceChild(newCSSlink, cssStyleOld);
+        }
+        else{
+
+            visual_toggle.ClassName= "slider round on";
+
+            var newCSSlink = document.createElement("link");
+            newCSSlink.setAttribute("class", "cssSheet");
+            newCSSlink.setAttribute("rel", "stylesheet");
+            newCSSlink.setAttribute("type", "text/css");
+            newCSSlink.setAttribute("href", "calculatorVisualImpaired.css");
+
+            document.getElementsByTagName("head").item(0).replaceChild(newCSSlink, cssStyleOld);
+        }
+
+    }, false);
+
+
 }

@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="Calculator.css">
+    <link class="cssSheet" rel="stylesheet" type="text/css" href="Calculator.css">
     <script src="Logic.js"></script>
     <meta charset="UTF-8">
     <title>Calculator</title>
 </head>
 <body>
+<!-- Rounded switch -->
+<label class="switch">
+    <input type="checkbox">
+    <span id="toggle" class="slider round off"></span>
+</label>
+<p class="impaired">Visual impaired toggle</p>
+
 <!-- operations -->
 <div id="background">
+
+
 
         <div id="result">0</div>
 
@@ -25,7 +34,7 @@
             <button class="bg-numbers btn-style num" value="7">7</button>
             <button class="bg-numbers btn-style num" value="8">8</button>
             <button class="bg-numbers btn-style num" value="9">9</button>
-            <button class="bg-operations btn-style opr r-op" value="/">/</button>
+            <button id="division" class="bg-operations btn-style opr r-op" value="/">/</button>
         </div>
 
         <div class="rows">
@@ -44,14 +53,14 @@
 
         <div class="rows">
             <button class="zero bg-numbers btn-style num" value="0">0</button>
-            <button class="bg-operations btn-style opr r-op lr" value=".">.</button>
+            <button id="dotto" class="bg-operations btn-style opr r-op lr period" value=".">.</button>
             <button id="equals" class="bg-operations btn-style opr r-op lr" value="=">=</button>
         </div>
 
         <div class="rows">
             <button class="bg-operations btn-style opr br" value="+">+</button>
-            <button class="bg-operations btn-style opr br" value="√">√</button>
-            <button class="bg-operations btn-style opr br" value="%">%</button>
+            <button id="root" class="bg-operations btn-style opr br" value="√">√</button>
+            <button id="percent" class="bg-operations btn-style opr br" value="%">%</button>
         </div>
 
     </div>
